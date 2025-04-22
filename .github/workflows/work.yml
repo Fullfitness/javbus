@@ -2,7 +2,9 @@ name: 'run'
 
 on:
   schedule:
-    - cron: '30 */8 * * *'
+  - cron: '1 16 * * *'   # 北京时间 00:01
+  - cron: '15 2 * * *'   # 北京时间 10:15
+  - cron: '59 15 * * *'  # 北京时间 23:59
   workflow_dispatch:
 
 jobs:
